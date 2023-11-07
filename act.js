@@ -2,7 +2,7 @@ function getAndupdate() {
     tit = document.getElementById('title').value;
     desc = document.getElementById('description').value;
     if (desc.trim() === "" || tit.trim() === "") {
-        alert("Title or Description cannot be empty")
+        alert("Title or Description cannot be blank")
     }
     else {
         if (localStorage.getItem('itemsJson') == null) {
